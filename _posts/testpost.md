@@ -4,8 +4,6 @@ title:  "첫포스트"
 author: Juyeon-Lee
 categories: test
 permalink: /posts/testpost/
-featured: true
-hidden: false
 ---
 
 ## 첫 블로그 포스트 입니다.
