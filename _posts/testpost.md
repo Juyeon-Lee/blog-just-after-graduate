@@ -2,8 +2,8 @@
 layout: post
 title:  "첫포스트"
 author: Juyeon-Lee
-categories: 
-image: 
+categories: test
+permalink: /posts/testpost/
 featured: true
 hidden: false
 ---
