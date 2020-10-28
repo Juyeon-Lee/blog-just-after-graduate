@@ -1,1 +1,21 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: "Juyeons Page-portfolio blog"
+description: "This is a github portfolio & blog page published by Juyeon-Lee."
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+pfurl: "/portfolio/"  # the subpath of your portfolio
+url: "https://Juyeon-Lee.github.io" # the base hostname & protocol for your site
+
+# User setting
+owner: "Juyeon-Lee"
+email: "ljo0831@naver.com"
+facebook_username: "ljo0831"
+twitter_username:
+github_username: "Juyeon-Lee"
+address: "Geumcheon-gu Seoul, South Korea"
+  # Feel free to add more lines here 
+telephone: "+082) 10-6600-3571"
+copyright:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
