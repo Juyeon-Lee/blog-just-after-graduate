@@ -1,7 +1,8 @@
 # Site settings
 title: "Juyeons Page-portfolio blog"
 description: "This is a github portfolio & blog page published by Juyeon-Lee."
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
+bgurl: "/blog/"
 pfurl: "/portfolio/"  # the subpath of your portfolio
 url: "https://Juyeon-Lee.github.io" # the base hostname & protocol for your site
 
@@ -19,3 +20,13 @@ copyright:
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # 첫 페이지에보여줄 최근 게시물 수를 지정
+paginate_path: /page:num/
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Gems
+gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
