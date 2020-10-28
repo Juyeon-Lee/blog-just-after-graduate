@@ -13,23 +13,25 @@
              <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
               <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
+              {% assign current = page.url | downcase | split: '/' '.' %}
+
              <ul id="nav" class="nav">
 
-                 <li class="current"><a href="index.html">Home</a></li>
-                 <li><span><a href="blog.html">Blog</a></span>
+                 <li {% if current[1] == '' %} class="current"{% endif %}><a href="/index.html">Home</a></li>
+                 <li {% if current[1] == 'blog' %} class="current"{% endif %}><span><a href="/blog.html">Blog</a></span>
                    <ul>
-                      <li><a href="blog.html">Blog Index</a></li>
-                      <li><a href="single.html">Post</a></li>
+                      <li><a href="/blog.html">Blog Index</a></li>
+                      <li><a href="/_posts/single.html">Post</a></li>
                    </ul>
                 </li>
-                <li><span><a href="portfolio-index.html">Portfolio</a></span>
+                <!--TODO : 현재 위치 태그 highlight-->
+                <li {% if current[1] == 'portfolio' %} class="current"{% endif %}><span><a href="/portfolio-index.html">Portfolio</a></span>
                    <ul>
-                      <li><a href="portfolio-index.html">Portfolio Index</a></li>
-                      <li><a href="portfolio.html">Portfolio Entry</a></li>
+                      <li><a href="/portfolio-index.html">Portfolio Index</a></li>
+                      <li><a href="/portfolio.html">Detail of Project</a></li>
                    </ul>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="styles.html">Features</a></li>
+                <li {% if current[1] == 'contact' %} class="current"{% endif %}><a href="/contact.html">Contact</a></li>
 
              </ul> <!-- end #nav -->
 

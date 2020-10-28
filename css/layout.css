@@ -826,10 +826,10 @@ ul#nav ul li a {
    font: 15px/24px notosans-bold, sans-serif;
    color: #313131;
 }
-.post .post-meta .categories {
+.post .post-meta .categories .tags {
    display: inline-block;
 }
-.post .post-meta .categories a { display: inline-block; }
+.post .post-meta .categories .tags a { display: inline-block; }
 
 
 /* post image */

@@ -2,6 +2,7 @@
 layout: post
 title:  "첫포스트"
 author: Juyeon-Lee
+datetime: 2020-10-28 19:00:00
 tags:
   - 태그
   - first
