@@ -5,7 +5,7 @@
        <div class="twelve columns">
 
           <div class="logo">
-             <a href="index.html"><img alt="" src="img/logo.png"></a>
+             <a href="index.html"><img alt="" src="/assets/img/logo.png"></a>
           </div>
 
           <nav id="nav-wrap">
@@ -18,20 +18,20 @@
              <ul id="nav" class="nav">
 
                  <li {% if current[1] == '' %} class="current"{% endif %}><a href="/index.html">Home</a></li>
-                 <li {% if current[1] == 'blog' %} class="current"{% endif %}><span><a href="/blog.html">Blog</a></span>
+                 <li {% if current[1] == 'blog' %} class="current"{% endif %}><span><a href="/blog">Blog</a></span>
                    <ul>
-                      <li><a href="/blog.html">Blog Index</a></li>
-                      <li><a href="/_posts/single.html">Post</a></li>
+                      <li><a href="/blog">Blog Index</a></li>
+                      <li><a href="/_posts/single">Post</a></li>
                    </ul>
                 </li>
                 <!--TODO : 현재 위치 태그 highlight-->
-                <li {% if current[1] == 'portfolio' %} class="current"{% endif %}><span><a href="/portfolio-index.html">Portfolio</a></span>
+                <li {% if current[1] == 'portfolio' %} class="current"{% endif %}><span><a href="/portfolio-index">Portfolio</a></span>
                    <ul>
-                      <li><a href="/portfolio-index.html">Portfolio Index</a></li>
-                      <li><a href="/portfolio.html">Detail of Project</a></li>
+                      <li><a href="/portfolio-index">Portfolio Index</a></li>
+                      <li><a href="/portfolio">Detail of Project</a></li>
                    </ul>
                 </li>
-                <li {% if current[1] == 'contact' %} class="current"{% endif %}><a href="/contact.html">Contact</a></li>
+                <li {% if current[1] == 'contact' %} class="current"{% endif %}><a href="/styles">Contact</a></li>
 
              </ul> <!-- end #nav -->
 

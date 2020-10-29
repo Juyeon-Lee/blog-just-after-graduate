@@ -1,11 +1,27 @@
 <head>
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
 
-    <!--- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-     <title>Sparrow - Free Responsive HTML5/CSS3 Template</title>
-     <meta name="description" content="">
-     <meta name="author" content="">
+    {% if page.collectionpage %}
+      {% seo title=false %}
+
+      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+      <title>{{ collectiondata.title }} - {{ site.title }}</title>
+      <meta property="og:title" content="{{ collectiondata.title }}">
+      <meta name="description" content="{{ collectiondata.description }}">
+      <meta property="og:description" content="{{ collectiondata.description }}">
+    {% else %}
+      {% seo %}
+    {% endif %}
+
+    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
+
+    <link rel="manifest" href="{{ "/assets/manifest.json" | relative_url }}">
+    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
+
+    
+    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
  
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -13,17 +29,18 @@
  
      <!-- CSS
      ================================================== -->
-    <link rel="stylesheet" href="css/default.css">
-     <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="/css/default.css">
+     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/media-queries.css">
+    <link rel="stylesheet" href="/css/fonts.css">
  
     <!-- Script
     ================================================== -->
-     <script src="js/modernizr.js"></script>
+     <script src="/assets/js/modernizr.js"></script>
  
     <!-- Favicons
      ================================================== -->
-     <link rel="shortcut icon" href="favicon.ico" > 
+     <link rel="shortcut icon" href="/assets/favicon.ico" > 
 
     {% feed_meta %}
     {% seo %}

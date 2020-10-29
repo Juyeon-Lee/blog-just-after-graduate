@@ -7,6 +7,11 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-mentions'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-commonmark'
+  gem 'jekyll-include-cache'
+  gem 'jemoji'
 end
 
 gem 'jekyll-paginate'

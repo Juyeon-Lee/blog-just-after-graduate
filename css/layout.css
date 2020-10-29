@@ -28,13 +28,13 @@
 /* a. Common Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #D2D8D8 url(../img/bg.jpg); }
+body { background: #D2D8D8 url(/assets/img/bg.jpg); }
 img { border-radius: 3px; }
 .content-outer { background: #fff }
 
 /* page title */
 #page-title {
-   background: #383232 url(../img/header-bg.jpg);
+   background: #383232 url(/assets/img/header-bg.jpg);
    padding-top: 42px;
    padding-bottom: 54px;
 }
@@ -166,7 +166,7 @@ img { border-radius: 3px; }
    border-radius: 3px;
 }
 #sidebar .widget .submit-search {
-	background:url(../img/search-icon.png) no-repeat;
+	background:url(/assets/img/search-icon.png) no-repeat;
 	border:none;
 	cursor:pointer;
 	width:18px;
@@ -190,7 +190,7 @@ img { border-radius: 3px; }
 header {
    height: 96px;
    width: 100%;
-   background: #383232 url(../img/header-bg.jpg);
+   background: #383232 url(/assets/img/header-bg.jpg);
 }
 
 /* header logo */
@@ -355,7 +355,7 @@ ul#nav ul li a {
 /* c. Intro Section - Main Page
 /* ------------------------------------------------------------------ */
 
-#about { background: #383232 url(../img/header-bg.jpg); }
+#about { background: #383232 url(/assets/img/header-bg.jpg); }
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */
@@ -464,14 +464,14 @@ ul#nav ul li a {
 
 .flex-direction-nav .flex-next {
 	right: 0px;
-	background: #1f2024 url(../img/direction-nav-right.png) no-repeat 47% 50%;
+	background: #1f2024 url(/assets/img/direction-nav-right.png) no-repeat 47% 50%;
 	position: absolute;
 
 	border-radius: 3px 0 0 3px;
 }
 .flex-direction-nav .flex-prev {
 	left: 0px;
-	background: #1f2024 url(../img/direction-nav-left.png) no-repeat 53% 50%;
+	background: #1f2024 url(/assets/img/direction-nav-left.png) no-repeat 53% 50%;
 	position: absolute;
 
 	border-radius: 0 3px 3px 0;
@@ -490,7 +490,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #skill {
-   background: #fff url(../img/content-bg.jpg);
+   background: #fff url(/assets/img/content-bg.jpg);
    padding-top: 60px;
    padding-bottom: 42px;
 }
@@ -509,7 +509,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #projects {
-   background: #f5f5f5 url(../img/projects-bg.jpg);
+   background: #f5f5f5 url(/assets/img/projects-bg.jpg);
    padding-top: 48px;
    padding-bottom: 36px;
    border-top: 1px solid #E3E8E8;
@@ -563,7 +563,7 @@ ul#nav ul li a {
 	transition: opacity 0.3s ease-in-out;
 
    border-radius: 3px 3px 0 0;
-   background: url(../img/overlay.png) repeat;
+   background: url(/assets/img/overlay.png) repeat;
 }
 .portfolio-item .item-wrap .link-icon {
    display: block;
@@ -626,7 +626,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #journal {
-   background: #fff url(../img/content-bg.jpg);
+   background: #fff url(/assets/img/content-bg.jpg);
    padding-top: 60px;
    padding-bottom: 48px;
 }
@@ -759,7 +759,7 @@ ul#nav ul li a {
 /* ------------------------------------------------------------------ */
 
 #tweets {
-   background: #f5f5f5 url(../img/tweets-bg.jpg);
+   background: #f5f5f5 url(/assets/img/tweets-bg.jpg);
    padding-top: 60px;
    padding-bottom: 30px;
    border-top: 1px solid #E3E8E8;
@@ -1247,7 +1247,7 @@ footer .copyright  li:first-child:before {
 	display: block;
 	width: 60px;
 	height: 40px;
-	background: url(../img/go-to-top.png) no-repeat 50% 50%;
+	background: url(/assets/img/go-to-top.png) no-repeat 50% 50%;
 	background-color: #1f2024;
 
 	-webkit-transition: all 0.2s ease-in-out;
