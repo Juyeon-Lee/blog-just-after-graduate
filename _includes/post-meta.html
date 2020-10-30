@@ -12,5 +12,8 @@
 
 <p class="post-meta">
   {% assign date_format = site.date_format | default: "%Y %b %d" %}
-  {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date: date_format }}</time>
+  <span class="categories">
+    {{ categories | append: "&nbsp;&middot;&nbsp;" }}
+  </span>
+  /<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date: date_format }}</time>
 </p>

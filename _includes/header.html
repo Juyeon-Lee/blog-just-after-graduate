@@ -1,44 +1,45 @@
 <header>
 
-    <div class="row">
+   <div class="row">
 
-       <div class="twelve columns">
+      <div class="twelve columns">
 
-          <div class="logo">
-             <a href="index.html"><img alt="" src="/assets/img/logo.png"></a>
-          </div>
+         <div class="logo">
+            <a href="index.html"><img alt="" src="/assets/img/logo.png"></a>
+         </div>
 
-          <nav id="nav-wrap">
+         <nav id="nav-wrap">
 
-             <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-              <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-              {% assign current = page.url | downcase | split: '/' '.' %}
+            {% assign current = page.url | downcase | split: '/' '.' %}
 
-             <ul id="nav" class="nav">
+            <ul id="nav" class="nav">
 
-                 <li {% if current[1] == '' %} class="current"{% endif %}><a href="/index.html">Home</a></li>
-                 <li {% if current[1] == 'blog' %} class="current"{% endif %}><span><a href="/blog">Blog</a></span>
-                   <ul>
-                      <li><a href="/blog">Blog Index</a></li>
-                      <li><a href="/_posts/single">Post</a></li>
-                   </ul>
-                </li>
-                <!--TODO : 현재 위치 태그 highlight-->
-                <li {% if current[1] == 'portfolio' %} class="current"{% endif %}><span><a href="/portfolio-index">Portfolio</a></span>
-                   <ul>
-                      <li><a href="/portfolio-index">Portfolio Index</a></li>
-                      <li><a href="/portfolio">Detail of Project</a></li>
-                   </ul>
-                </li>
-                <li {% if current[1] == 'contact' %} class="current"{% endif %}><a href="/styles">Contact</a></li>
+               <li {% if current[1] == '' %} class="current" {% endif %}><a href="/index.html">Home</a></li>
+               <li {% if current[1] == 'portfolio' %} class="current" {% endif %}><span><a
+                        href="/portfolio-index">Portfolio</a></span>
+                  <ul>
+                     <li><a href="/portfolio-index">Portfolio Index</a></li>
+                     <li><a href="/portfolio">Detail of Project</a></li>
+                  </ul>
+               </li>
+               <li {% if current[1] == 'blog' %} class="current" {% endif %}><span><a href="/blog">Blog</a></span>
+                  <ul>
+                     <li><a href="/blog">Blog Index</a></li>
+                     <li><a href="/_posts/single">Post</a></li>
+                  </ul>
+               </li>
+               <!--TODO : 현재 위치 태그 highlight-->
+               <li {% if current[1] == 'contact' %} class="current" {% endif %}><a href="/about">About</a></li>
 
-             </ul> <!-- end #nav -->
+            </ul> <!-- end #nav -->
 
-          </nav> <!-- end #nav-wrap -->
+         </nav> <!-- end #nav-wrap -->
 
-       </div>
+      </div>
 
-    </div>
+   </div>
 
- </header>
+</header>

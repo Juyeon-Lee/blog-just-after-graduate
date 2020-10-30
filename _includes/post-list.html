@@ -1,46 +1,50 @@
 <div id="primary" class="eight columns">
    <p>{% if paginator.posts %}1 {% else %}0 {% endif %}</p>
-   
-    {% if paginator.posts %}
-    {% for page in paginator.posts %}
-      <article class="post">
-       <div class="entry-header cf">
-          <h1><a href="{{ site.baseurl }}{{ page.url }}" title="">{{ page.title }}</a></h1>
-          {% include post-meta.html %}
-          {{ page.excerpt | markdownify | truncatewords: 60 }}
-          
-       </div>
+   <p>아직은 Github Blog에 올린 포스트가 존재하지 않습니다.<br>
+      아래는 예시 포스트입니다.</p>
 
-       <div class="post-thumb">
-          <a href="{{ page.url }}" title=""><img src="/assets/img/post-image/post-image-1300x500-01.jpg" alt="post-image" title="post-image"></a>
-       </div>
+   {% if paginator.posts %}
+   {% for page in paginator.posts %}
+   <article class="post">
+      <div class="entry-header cf">
+         <h1><a href="{{ site.baseurl }}{{ page.url }}" title="">{{ page.title }}</a></h1>
+         {% include post-meta.html %}
+         {{ page.excerpt | markdownify | truncatewords: 60 }}
 
-       <div class="post-content">
-          <p>{{ page.content }}</p>
-       </div>
-      </article> <!-- post end -->
-      {% endfor %}
-      {% include post-pagination.html %}
-    {% else %}
-    {% for page in site.posts %}
-      <article class="post">
-        <div class="entry-header cf">
-         
-           <h1><a href="{{ site.baseurl }}{{ page.url }}" title="">{{ page.title }}</a></h1>
-           {% include post-meta.html %}
-           {{ page.excerpt | markdownify | truncatewords: 60 }}
-           
-        </div>
- 
-        <div class="post-thumb">
-           <a href="{{ page.url }}" title=""><img src="/assets/img/post-image/post-image-1300x500-01.jpg" alt="post-image" title="post-image"></a>
-        </div>
- 
-        <div class="post-content">
-           <p>{{ page.content }}</p>
-        </div>
-      </article> <!-- post end -->
-      {% endfor %}
-    {% endif %}
+      </div>
 
- </div> <!-- Primary End-->
+      <div class="post-thumb">
+         <a href="{{ page.url }}" title=""><img src="/assets/img/post-image/post-image-1300x500-01.jpg" alt="post-image"
+               title="post-image"></a>
+      </div>
+
+      <div class="post-content">
+         <p>{{ page.content }}</p>
+      </div>
+   </article> <!-- post end -->
+   {% endfor %}
+   {% include post-pagination.html %}
+   {% else %}
+   {% for page in site.posts %}
+   <article class="post">
+      <div class="entry-header cf">
+
+         <h1><a href="{{ site.baseurl }}{{ page.url }}" title="">{{ page.title }}</a></h1>
+         {% include post-meta.html %}
+         {{ page.excerpt | markdownify | truncatewords: 60 }}
+
+      </div>
+
+      <div class="post-thumb">
+         <a href="{{ page.url }}" title=""><img src="/assets/img/post-image/post-image-1300x500-01.jpg" alt="post-image"
+               title="post-image"></a>
+      </div>
+
+      <div class="post-content">
+         <p>{{ page.content }}</p>
+      </div>
+   </article> <!-- post end -->
+   {% endfor %}
+   {% endif %}
+
+</div> <!-- Primary End-->

@@ -1,46 +1,79 @@
-<section id="about" class="about">
+<!-- Content
+   ================================================== -->
+<div class="content-outer">
 
-    <!-- Flexslider Start-->
-     <div id="intro-slider" class="flexslider">
+    <div id="page-content" class="row page">
 
-         <ul class="slides">
+        <div id="primary" class="eight columns">
 
-             <!-- Slide -->
-             <li>
-                 <div class="row">
-                     <div class="twelve columns">
-                         <div class="slider-text">
-                             <h1>Free amazing site template<span>.</span></h1>
-                             <p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                      enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-                      enim tellus ultrices elit.</p>
-                         </div>
-                   <div class="slider-image">
-                      <img src="/assets/img/sliders/home-slider-image-01.png" alt="" />
-                   </div>
-                     </div>
-                 </div>
-             </li>
+            <section>
 
-          <!-- Slide -->
-             <li>
-                 <div class="row">
-                     <div class="twelve columns">
-                         <div class="slider-text">
-                             <h1>Responsive + HTML5 + CSS3<span>.</span></h1>
-                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                      deleniti eos et accusamus. amet consequat enim elit noneas sit amet luctu. lacus sit amet luctus lobortis.
-                      Aenean condimentum, lacus sit amet luctus.</p>
-                         </div>
-                   <div class="slider-image">
-                      <img src="/assets/img/sliders/home-slider-image-02.png" alt="" />
-                   </div>
-                     </div>
-                 </div>
-             </li>
+                <h1>서버 개발자</h1>
 
-         </ul>
+                <p class="lead">{{ page.content }}</p>
 
-     </div> <!-- Flexslider End-->
+                <p>{{ page.content }}</p>
 
- </section>
+            </section> <!-- section end -->
+
+        </div>
+
+        <div id="secondary" class="four columns end">
+
+            <aside id="sidebar">
+
+                <div class="widget widget_search">
+                    <h5>Search</h5>
+                    <form action="#">
+
+                        <input class="text-search" type="text"
+                            onfocus="if (this.value == 'Search here...') { this.value = ''; }"
+                            onblur="if(this.value == '') { this.value = 'Search here...'; }" value="Search here...">
+                        <input type="submit" class="submit-search" value="">
+
+                    </form>
+                </div>
+
+                <div class="widget widget_text">
+                    <h5 class="widget-title">Text Widget</h5>
+                    <div class="textwidget">위젯으로 말하고 싶은것을 써넣으세요. </div>
+                </div>
+
+                <div class="widget widget_contact">
+                    <h5>Address and Phone</h5>
+                    <p class="address">
+                        서울 금천구<br>
+                        Geumcheon-gu, Seoul, South Korea<br>
+                        <span>(010) 6600-3571</span>
+                    </p>
+
+                    <h5>Email and Social</h5>
+                    <p>
+                        E-mail: {{ site.email }}<br>
+                        GitHub: <a href="{{ site.social_links.GitHub }}">Juyeon-Lee</a><br>
+                        Facebook: <a href="{{ site.social_links.FaceBook }}">Juyeon Lee FB page</a><br>
+                        LinkedIn: <a href="{{ site.social_links.LinkedIn }}">Juyeon Lee's page</a>
+                    </p>
+                </div>
+
+                <div class="widget widget_photostream">
+                    <h5>Photostream</h5>
+                    <ul class="photostream cf">
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                        <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
+                    </ul>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</div> <!-- Content End-->

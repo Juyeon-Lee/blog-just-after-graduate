@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="main  container">
+   <!-- Page Title
+   ================================================== -->
+   <div id="page-title">
+
+      <div class="row">
+
+         <div class="ten columns centered text-center">
+        
+            <h1>{{ page.toptitle }}<span>.</span></h1>
+            <p>{{ page.subtitle }}</p>
+            {{ content }}
+
+         </div>
+
+      </div>
+
+   </div><!-- Page Title End-->
+
+   <!-- Content
+   ================================================== -->
+    {% include portfolio.html %}
+   <!-- Content End-->
+
+</main>
+
+{% include footer.html %}

@@ -91,6 +91,7 @@ url           : "https://Juyeon-Lee.github.io"  # Site url, also used in jekyll-
 baseurl: "/"
 repo: "https://github.com/Juyeon-Lee/Juyeon-Lee.github.io"
 email: "ljo0831@naver.com"
+telephone: "+082) 10-6600-3571"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # google_analytics: ''
 # google_analytics_anonymize_ip: ''
@@ -128,11 +129,9 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   FaceBook: https://www.facebook.com/JuyeonLee97
   LinkedIn: https://www.linkedin.com/in/juyeon-lee-669753177
   GitHub: https://github.com/Juyeon-Lee
-  Telephone: "+082) 10-6600-3571"
   RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
-  Twitter: "#0d94e7"
   facebook: "#3B5998"
   Email: true
 
