@@ -37,60 +37,7 @@ layout: default
       <div id="page-content" class="row">
 
          {% include post-list.html %}
-
-         <div id="secondary" class="four columns end">
-
-            <aside id="sidebar">
-
-               <div class="widget widget_search">
-                  <h5>Search</h5>
-                  <form action="#">
-
-                     <input class="text-search" type="text"
-                        onfocus="if (this.value == 'Search here...') { this.value = ''; }"
-                        onblur="if(this.value == '') { this.value = 'Search here...'; }" value="Search here...">
-                     <input type="submit" class="submit-search" value="">
-
-                  </form>
-               </div>
-
-               <div class="widget widget_categories">
-                  <h5 class="widget-title">Categories</h5>
-                  <ul class="link-list cf">
-                     {% for category in site.categories %}
-                     <li><a href="#">{{ category[0] }}</a></li>
-                     {% endfor %}
-
-                  </ul>
-               </div>
-
-               <div class="widget widget_tag_cloud">
-                  <h5 class="widget-title">Tags</h5>
-                  <div class="tagcloud cf">
-                     {% for tag in site.tags %}
-                     <a href="#">{{ tag[0] }}</a>
-                     {% endfor %}
-
-                  </div>
-               </div>
-
-               <div class="widget widget_photostream">
-                  <h5>Photostream</h5>
-                  <ul class="photostream cf">
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                     <li><a href="#"><img src="/assets/img/thumb.jpg" alt="thumbnail"></a></li>
-                  </ul>
-               </div>
-
-            </aside>
-
-         </div> <!-- Secondary End-->
+         {% include side-widget.html %}
 
       </div>
 

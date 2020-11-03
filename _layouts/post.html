@@ -5,18 +5,46 @@ layout: default
 {% include header.html %}
 
 <main class="main  container">
+  <!-- Page Title
+   ================================================== -->
+  <div id="page-title">
 
-    <article class="article  article--page  content  typeset">
-  
-      <h1>{{ page.title }}</h1>
-      <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+    <div class="row">
 
-      {{ content }}
+      <div class="ten columns centered text-center">
+
+        <h1>Juyeon Lee's log<span>.</span></h1>
+        <p>파이썬, 자바 웹 백엔드 개발자가 되기 위해 노력중! 기록하고 싶은 것들 기록합니다.</p>
+        
+        
+      </div>
+
+    </div>
+
+  </div> <!-- Page Title End-->
+
+  <!-- Content
+   ================================================== -->
+  <div class="content-outer">
+    <div id="page-content" class="row">
+      <div id="primary" class="eight columns">
+        <article class="post">
+          <div class="entry-header cf">
+          <h1>{{ page.title }}</h1>
+        </div>
+          {% include post-meta.html %}
+          {{ content }}
+          
+        </article>
+        {% include nav-share.html %}
+
+        {% include post-comments.html %}
+      </div>
+      {% include side-widget.html %}
+    </div>
   
-    </article>
-  
-    {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+  </div> <!-- Content End-->
   
   </main>
-
+  
   {% include footer.html %}

@@ -60,6 +60,13 @@ collections:
     feature_text: |
       "파이썬, 자바 웹 백엔드 개발자가 되기 위해 노력중! 기록하고 싶은 것들 기록합니다."
     feature_image: "https://picsum.photos/2560/600?image=866"
+  projects:
+    title: projects
+    output: true
+    description: "These are my projects of my portfolio."
+    feature_text:
+      "text"
+    feature_image: "/assets/img/sliders/home-slider-image-01.png"
 
 # 6. Jekyll collections settings
 defaults:
@@ -80,6 +87,12 @@ defaults:
       type: "pages"
     values:
       layout: page # Set the default layout for pages
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project # Set the default layout for pages
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
@@ -88,7 +101,7 @@ title: "Juyeons Page-portfolio blog" # Site name or title, also used in jekyll-s
 logo: "/assets/img/logo.png" # Site logo, also used in jekyll-seo-tag
 description   : "This is a github portfolio & blog page published by Juyeon-Lee."
 url           : "https://Juyeon-Lee.github.io"  # Site url, also used in jekyll-seo-tag
-baseurl: "/"
+baseurl: ""
 repo: "https://github.com/Juyeon-Lee/Juyeon-Lee.github.io"
 email: "ljo0831@naver.com"
 telephone: "+082) 10-6600-3571"
@@ -111,7 +124,7 @@ navigation_header:
 - title: Home
   url: /
 - title: Portfolio
-  url: /elements/
+  url: /portfolio-index/
 - title: Blog
   url: /blog/
 - title: About

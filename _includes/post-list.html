@@ -25,7 +25,7 @@
    {% endfor %}
    {% include post-pagination.html %}
    {% else %}
-   {% for page in site.posts %}
+   {% for page in site.posts %}<!-- This is difference. -->
    <article class="post">
       <div class="entry-header cf">
 

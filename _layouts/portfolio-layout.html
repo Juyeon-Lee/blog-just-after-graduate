@@ -12,10 +12,17 @@ layout: default
       <div class="row">
 
          <div class="ten columns centered text-center">
-        
+            {% if paginator.posts %}
+            {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+            <h1>{{ collectiondata.title }}</h1>
+            {{ collectiondata.description | markdownify }}
+
+            {% else %}
             <h1>{{ page.toptitle }}<span>.</span></h1>
             <p>{{ page.subtitle }}</p>
             {{ content }}
+
+            {% endif %}
 
          </div>
 

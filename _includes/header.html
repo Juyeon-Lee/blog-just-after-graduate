@@ -5,7 +5,7 @@
       <div class="twelve columns">
 
          <div class="logo">
-            <a href="index.html"><img alt="" src="/assets/img/logo.png"></a>
+            <a href="index"><img alt="" src="/assets/img/logo.png"></a>
          </div>
 
          <nav id="nav-wrap">
@@ -17,22 +17,19 @@
 
             <ul id="nav" class="nav">
 
-               <li {% if current[1] == '' %} class="current" {% endif %}><a href="/index.html">Home</a></li>
-               <li {% if current[1] == 'portfolio' %} class="current" {% endif %}><span><a
-                        href="/portfolio-index">Portfolio</a></span>
+               <li {% if current[1] == 'index' %} class="current" {% endif %}><a href="/index">Home</a></li>
+               <li {% if current[1] == 'portfolio' or current[1] == 'projects' %} class="current" {% endif %}><span><a
+                        href="/portfolio">Portfolio</a></span>
                   <ul>
-                     <li><a href="/portfolio-index">Portfolio Index</a></li>
-                     <li><a href="/portfolio">Detail of Project</a></li>
+                     <li><a href="/portfolio">Portfolio Index</a></li>
                   </ul>
                </li>
-               <li {% if current[1] == 'blog' %} class="current" {% endif %}><span><a href="/blog">Blog</a></span>
+               <li {% if current[1] == 'blog' or current[1] == '' %} class="current" {% endif %}><span><a href="/blog">Blog</a></span>
                   <ul>
                      <li><a href="/blog">Blog Index</a></li>
-                     <li><a href="/_posts/single">Post</a></li>
                   </ul>
                </li>
-               <!--TODO : 현재 위치 태그 highlight-->
-               <li {% if current[1] == 'contact' %} class="current" {% endif %}><a href="/about">About</a></li>
+               <li {% if current[1] == 'about' %} class="current" {% endif %}><a href="/about">About</a></li>
 
             </ul> <!-- end #nav -->
 

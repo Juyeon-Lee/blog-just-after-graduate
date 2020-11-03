@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="main  container">
+    <!-- Page Title
+   ================================================== -->
+    <div id="page-title">
+
+        <div class="row">
+
+            <div class="ten columns centered text-center">
+                {% if paginator.posts %}
+                {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+                <h1>{{ collectiondata.title }}</h1>
+                {{ collectiondata.description | markdownify }}
+
+                {% else %}
+                <h1>{{ page.toptitle }}<span>.</span></h1>
+                <p>{{ page.subtitle }}</p>
+                {{ content }}
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </div><!-- Page Title End-->
+
+    <!-- Content
+   ================================================== -->
+    <div class="content-outer">
+
+        <div id="page-content" class="row portfolio">
+
+            <section class="entry cf">
+
+                <div id="secondary" class="four columns entry-details">
+
+                    <h1>Our Portfolio.</h1>
+
+                    <div class="entry-description">
+
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                            vulputate
+                            cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor
+                            a
+                            ornare odio.</p>
+
+                    </div>
+
+                    <ul class="portfolio-meta-list">
+                        <li><span>Date: </span>January 2014</li>
+                        <li><span>Client </span>Styleshout</li>
+                        <li><span>Skills: </span>Photoshop, Photography, Branding</li>
+                    </ul>
+
+                    <a href="http://behance.net" target="_blank" class="button">View project</a>
+
+
+                </div> <!-- Secondary End-->
+
+                <div id="primary" class="eight columns portfolio-list">
+
+                    <div class="entry-media">
+
+                        <img src="/assets/img/portfolio/entries/geometric-backgrounds-01.jpg" alt="" />
+
+                        <img src="/assets/img/portfolio/entries/geometric-backgrounds-02.jpg" alt="" />
+
+                    </div>
+
+                    <div class="entry-excerpt">
+
+                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                            nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                            vulputate
+                            cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+
+                    </div>
+
+                </div> <!-- primary end-->
+
+            </section> <!-- end section -->
+
+        </div> <!-- #page-content end-->
+
+    </div> <!-- content End-->
+
+</main>
+
+{% include footer.html %}
