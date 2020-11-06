@@ -19,7 +19,7 @@ feature_text: |
 ## 첫 번째 에러
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postsRepository' defined in com.juyeon.team.teamcoder.domain.posts.PostsRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext'
 
-```@EnableJpaRepositories```
+`@EnableJpaRepositories`
 를 메인 application class 위에 추가해주었더니 저 에러는 없어졌지만 또 다른 에러가 발생하였다.
 
 결론적으로 말하면 이것이 없어도 다음에 한 해결책으로 해결되는 문제였다.
@@ -42,22 +42,23 @@ persistence.xml에서 이미 설정했었다가 persistence.xml을 사용하지 
 
 ***문제의 코드***
 
-![image](https://user-images.githubusercontent.com/41712244/98332106-5e2e7c80-2041-11eb-8fc3-f164701e7157.png)
+![capture01](https://user-images.githubusercontent.com/41712244/98366629-a36da100-2077-11eb-83fd-cca46435e7a3.png)
 
 참고 사이트:
-https://dzone.com/articles/bounty-spring-boot-and-postgresql-database
+[https://dzone.com/articles/bounty-spring-boot-and-postgresql-database](https://dzone.com/articles/bounty-spring-boot-and-postgresql-database)
 
----
-### 잠깐!
-persistence.xml는 JPA의 설정을 관리하는 파일이다.
 
-Spring boot에서는 application.properties 또는 application.yml 으로 관리한다.
----
+
+> ### 잠깐!
+> persistence.xml는 JPA의 설정을 관리하는 파일이다.
+> Spring boot에서는 application.properties 또는 application.yml 으로 관리한다.
+
+----
+
 그 후 테스트코드가 잘 실행되어 정말 시원했다.
 
 아래는 나와 비슷한 환경인 사람들을 위한 코드이다.
-
-나의 환경은
+나의 환경은 다음과 같다.
 - jdk 11
 - spring 2.3.5
 - junit 4.12
