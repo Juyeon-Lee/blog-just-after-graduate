@@ -660,7 +660,7 @@ ul#nav ul li a {
    margin-bottom: 6px;
 }
 #journal .entry-header .entry-title { padding-right: 16.66667%; }
-#journal .entry-header h3 { font: 31px/42px raleway-bold, sans-serif; }
+#journal .entry-header h3 { font: 31px/42px source-han-sans-korean, sans-serif; }
 #journal .entry-header .permalink {
    position: absolute;
    top: 18px;
@@ -810,7 +810,7 @@ ul#nav ul li a {
    width: 100%;
 }
 .post .entry-header h1 {
-   font: 39px/48px raleway-semibold, sans-serif;
+   font: 39px/48px source-han-sans-korean, sans-serif;
    margin-bottom: 18px;
 }
 .post .entry-header h1 a,

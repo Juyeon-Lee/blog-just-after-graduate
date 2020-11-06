@@ -28,6 +28,7 @@ e. Others
 
 @import url("/css/fonts.css");
 @import url("/assets/font-awesome/css/font-awesome.min.css");
+@import url(//db.onlinewebfonts.com/c/37d8aff129ecd7d3fc495b7239f834db?family=Bitstream+Vera+Sans+Mono);
 
 /* ------------------------------------------------------------------
 /* b. Reset
@@ -53,6 +54,7 @@ time, mark, audio, video {
    border: 0;
    outline: 0;
    font-size: 100%;
+   font-family: source-han-sans-korean;
    vertical-align: baseline;
    background: transparent;
 }
@@ -75,16 +77,87 @@ audio:not([controls]) {
 
 [hidden] { display: none; }
 
-code, kbd, pre, samp {
-   font-family: monospace, serif;
+
+
+/*
+Copyright (c) 2017 Chris Patuzzo
+https://twitter.com/chrispatuzzo
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+code, tt {
+   margin: 0 2px;
+   padding: 0 5px;
+   white-space: nowrap;
+   border: 1px solid #11ABB0;
+   background-color: #e8f0f0;
+   color: #3d4145;
+   font-family: Bitstream Vera Sans Mono;
+   font-size: 15px;
+   line-height: 30px;
+   border-radius: 3px;
+ }
+ 
+ pre code {
+   margin: 0;
+   padding: 0;
+   white-space: pre;
+   border: none;
+   background: transparent;
+ }
+ 
+ .highlight pre {
+   background-color: #e8f0f0;
+   border: 1px solid #cccccc;
+   font-size: 15px;
+   line-height: 19px;
+   overflow: auto;
+   padding: 6px 10px;
+   border-radius: 3px;
+ }
+ 
+ pre {
+   background-color: #e8f0f0;
+   border: 1px solid #cccccc;
+   font-size: 15px;
+   line-height: 19px;
+   overflow: auto;
+   padding: 6px 10px;
+   border-radius: 3px;
+ }
+ 
+ pre code, pre tt {
+   background-color: transparent;
+   border: none;
+ }
+
+kbd, pre, samp { /*code */
+   font-family: Bitstream Vera Sans Mono, monospace, serif;
    font-size: 1em;
 }
-
+/*
+end of github.css
+*/
+/*
 pre {
    white-space: pre;
    white-space: pre-wrap;
    word-wrap: break-word;
 }
+*/
 
 blockquote, q { quotes: &#8220; }
 
@@ -154,7 +227,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
    color: #313131;
-	font-family: raleway-bold, sans-serif;
+	font-family: source-han-sans-korean, sans-serif;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 42px; line-height: 48px; margin-bottom: 12px;}
@@ -164,18 +237,29 @@ h4 { font-size: 21px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 
-p { margin: 0 0 30px 0; }
+p { 
+   margin: 0 0 30px 0; 
+   color: #3f3e3e;
+}
 p img { margin: 0; }
 p.lead {
    font: 20px/36px raleway-regular, sans-serif;
    margin-bottom: 18px;
-   color: #9FA5AD;
+   color: #3f3e3e;
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
-em { font: 15px/30px notosans-italic, sans-serif; }
-strong, b { font: 15px/30px notosans-bold, sans-serif; }
+em { 
+   /*border: 2px solid #a09090;*/
+   background-color: rgb(240, 240, 196);
+   font: 15px/30px source-han-sans-korean, sans-serif; 
+   font-style: italic; 
+}
+strong, b { 
+   font: 15px/30px source-han-sans-korean, sans-serif; 
+   font-style: bold;
+}
 small { font-size: 11px; line-height: inherit; }
 
 /*	Blockquotes */
@@ -211,7 +295,7 @@ blockquote cite {
 }
 blockquote cite:before { content: "\2014 \0020"; }
 blockquote cite a,
-blockquote cite a:visited { color: #8B9798; border: none }
+blockquote cite a:visited { color: #6c797a; border: none }
 
 /* ---------------------------------------------------------------------
 /*  Pull Quotes Markup
@@ -268,7 +352,7 @@ abbr:hover { cursor: help; }
 	margin: 0;
 	padding: 14px 6px 0 0;
 	font-size: 84px;
-	font-family: /* Copperplate */ raleway-bold, sans-serif;
+	font-family: /* Copperplate */ source-han-sans-korean, sans-serif;
    line-height: 60px;
 	text-indent: 0;
 	background: transparent;
@@ -307,9 +391,13 @@ ul ul, ul ol,
 ol ol, ol ul { margin: 6px 0 6px 30px; }
 ul ul li, ul ol li,
 ol ol li, ol ul li { margin-bottom: 6px; }
-li { line-height: 18px; margin-bottom: 12px; }
+li { 
+   line-height: 18px; margin-bottom: 12px;
+   color: #3f3e3e;
+   padding-left: 30px;
+}
 ul.large li { }
-li p { }
+li p { color: #6E757C; }
 
 /* ---------------------------------------------------------------------
 /*  Stats Tab Markup
@@ -351,7 +439,7 @@ li p { }
 	margin: 6px 0 0 0;
 	font-size: 13px;
 	font-family: notosans-regular, sans-serif;
-   color: #8B9798;
+   color: #3f3e3e;
 }
 
 /* definition list */
