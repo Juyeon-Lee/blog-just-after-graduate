@@ -2,6 +2,9 @@
 title: Description of an Alembic
 categories:
 - General
+tags:
+- demo
+- alembic
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 

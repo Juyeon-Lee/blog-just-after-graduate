@@ -24,13 +24,15 @@
                      <li><a href="/portfolio">Portfolio Index</a></li>
                   </ul>
                </li>
-               <li {% if current[1] == 'blog' or current[1] == '' %} class="current" {% endif %}><span><a href="/blog">Blog</a></span>
-                  <ul>
-                     <li><a href="/blog">Blog Index</a></li>
-                  </ul>
-               </li>
+               <li {% if current[1] == 'blog' or current[1] == '' %} class="current" {% endif %}><a href="/blog">Blog</a></li>
                <li {% if current[1] == 'about' %} class="current" {% endif %}><a href="/about">About</a></li>
-
+               <li {% if current[1] == 'categories' %} class="current" {% endif %}><span><a href="/categories">Categories</a></span>
+               <ul>
+                  <li><a href="/categories">Categories</a></li>
+                  <li><a href="/tags">tags</a></li>
+               </ul>
+            </li>
+               <li {% if current[1] == 'search' %} class="current" {% endif %}><a href="/search">Search</a></li>
             </ul> <!-- end #nav -->
 
          </nav> <!-- end #nav-wrap -->

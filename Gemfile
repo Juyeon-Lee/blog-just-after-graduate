@@ -15,5 +15,6 @@ group :jekyll_plugins do
 end
 
 gem 'jekyll-paginate'
+gem 'wdm'
 gem 'tzinfo'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

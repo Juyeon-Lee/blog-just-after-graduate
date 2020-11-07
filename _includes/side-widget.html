@@ -1,49 +1,72 @@
 {% assign current = page.url | downcase | split: '/' '.' %}
-
-<div id="secondary" class="four columns end">
-
+{% if current[1] == 'categories' %}
+<div id="secondary" class="four columns categories-index">
     <aside id="sidebar">
 
-        <div class="widget widget_search">
-            <h5>Search</h5>
-            <form action="#">
-
-                <input class="text-search" type="text"
-                    onfocus="if (this.value == 'Search here...') { this.value = ''; }"
-                    onblur="if(this.value == '') { this.value = 'Search here...'; }" value="Search here...">
-                <input type="submit" class="submit-search" value="">
-
-            </form>
+        <div class="widget widget_text">
+            <h3>Index</h3>
+            <nav class="nav  nav--categories">
+                <ul class="list  list--categories">
+                    {% for item in site.categories %}
+                    <li class="item  item--category">
+                        <a href="#{{ item | first | slugify }}">{{ item | first }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
         </div>
+
+</div>
+
+{% elsif current[1] == 'tags' %}
+<div id="secondary" class="four columns categories-index">
+    <aside id="sidebar">
+        <div class="widget widget_text">
+            <h3>Index</h3>
+            <nav class="nav  nav--tags">
+                <ul class="list  list--tags">
+                    {% for item in site.tags %}
+                    <li class="item  item--tag">
+                        <a href="#{{ item | first | slugify }}">{{ item | first }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+</div>
+
+{% else %}
+<div id="secondary" class="two columns end">
+
+    <aside id="sidebar">
 
         {% if current[1] == 'blog' %}
         <div class="widget widget_categories">
             <h5 class="widget-title">Categories</h5>
             <ul class="link-list cf">
-                {% for category in site.categories %}
-                <li><a href="#">{{ category[0] }}</a></li>
+                {% for item in site.categories %}
+                <li class="item  item--category">
+                    <a href="/categories/#{{ item | first | slugify }}">{{ item | first }}</a>
+                </li>
                 {% endfor %}
 
             </ul>
         </div>
-
         <div class="widget widget_tag_cloud">
             <h5 class="widget-title">Tags</h5>
             <div class="tagcloud cf">
-                {% for tag in site.tags %}
-                <a href="#">{{ tag[0] }}</a>
+                {% for item in site.tags %}
+                <a href="/tags/#{{ item | first | slugify }}">{{ item | first }}</a>
                 {% endfor %}
 
             </div>
         </div>
-        {% endif %}
 
-        {% if current[1] == 'about' %}
+        {% elsif current[1] == 'about' %}
         <div class="widget widget_text">
             <h5 class="widget-title">Text Widget</h5>
             <div class="textwidget">위젯으로 말하고 싶은것을 써넣으세요. </div>
         </div>
-
         <div class="widget widget_contact">
             <h5>Address and Phone</h5>
             <p class="address">
@@ -63,5 +86,5 @@
         {% endif %}
 
     </aside>
-
 </div>
+{% endif %}

@@ -5,17 +5,20 @@ layout: default
 {% include header.html %}
 
 <main class="main  container">
+  <div class="content-outer">
+    <div id="page-content" class="row">
+      <article class="post">
+        <div class="entry-header cf">
+          <h1>{{ page.title }}</h1>
+        </div>
+        {{ content }}
 
-    <article class="article  article--page  content  typeset">
-  
-      <h1>{{ page.title }}</h1>
-  
-      {{ content }}
-  
-    </article>
-  
-    {% if page.aside == true %}{% include site-aside.html %}{% endif %}
-  
-  </main>
+      </article>
 
-  {% include footer.html %}
+    </div>
+
+  </div>
+
+</main>
+
+{% include footer.html %}
