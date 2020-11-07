@@ -14,13 +14,8 @@ layout: default
             <h1>{{ page.title }}</h1>
           </div>
           {{ content }}
-          
-          {% assign current = page.url | downcase | split: '/' '.' %}
-          {% if current[1] == 'categories' %}
+
             {% include post-categories.html %}
-          {% elsif current[1]== 'tags' %}
-            {% include post-tags.html %}
-          {% endif %}
         </article>
       </div>
       

@@ -12,9 +12,9 @@ group :jekyll_plugins do
   gem 'jekyll-commonmark'
   gem 'jekyll-include-cache'
   gem 'jemoji'
+  gem 'jekyll-paginate'
 end
 
-gem 'jekyll-paginate'
 gem 'wdm'
 gem 'tzinfo'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

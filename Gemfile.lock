@@ -117,6 +117,7 @@ GEM
     tzinfo-data (1.2020.4)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -135,6 +136,7 @@ DEPENDENCIES
   jemoji
   tzinfo
   tzinfo-data
+  wdm
 
 BUNDLED WITH
    2.1.4

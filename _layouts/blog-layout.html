@@ -7,15 +7,15 @@ layout: default
 <main class="main  container">
    <!-- Page Title
    ================================================== -->
-   <div id="page-title">
+   <div id="page-title-blog">
 
       <div class="row">
-
+         
          <div class="ten columns centered text-center">
             {% if paginator.posts %}
             {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
             <h1>{{ collectiondata.title }}</h1>
-            {{ collectiondata.description | markdownify }}
+            <p>{{ collectiondata.description | markdownify }}</p>
 
             {% else %}
             <h1>{{ page.toptitle }}<span>.</span></h1>

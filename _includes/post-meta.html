@@ -10,10 +10,26 @@
   {% endcapture %}
 {% endif %}
 
+{% if page.tags %}
+  {% capture tags %}
+    {% for tag in page.tags %}
+      <span class="label  label--tag"><a href="{{ site.baseurl }}/tags/#{{ category | downcase }}">#{{ tag }}</a></span>{% if forloop.last == false %} {% endif %}
+    {% endfor %}
+  {% endcapture %}
+{% elsif page.tag %}
+  {% capture tags %}
+    <span class="label  label--tag"><a href="{{ site.baseurl }}/tags/#{{ page.category | downcase }}">{{ page.tag }}</a></span>
+  {% endcapture %}
+{% endif %}
+
 <p class="post-meta">
   {% assign date_format = site.date_format | default: "%Y %b %d" %}
   <span class="categories">
-    {{ categories | append: "&nbsp;&middot;&nbsp;" }}
+    {{ categories | append: "&nbsp;" }}
   </span>
   /<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date: date_format }}</time>
+  <br>
+  <span class="tags">
+    {{ tags | append: "&nbsp;" }}
+  </span>
 </p>

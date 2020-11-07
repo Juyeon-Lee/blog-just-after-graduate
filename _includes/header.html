@@ -1,3 +1,4 @@
+{% assign current = page.url | downcase | split: '/' '.' %}
 <header>
 
    <div class="row">
@@ -13,7 +14,7 @@
             <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
             <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-            {% assign current = page.url | downcase | split: '/' '.' %}
+            
 
             <ul id="nav" class="nav">
 
@@ -36,9 +37,8 @@
             </ul> <!-- end #nav -->
 
          </nav> <!-- end #nav-wrap -->
-
       </div>
-
+      
    </div>
 
 </header>

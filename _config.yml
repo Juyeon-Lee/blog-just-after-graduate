@@ -54,12 +54,11 @@ timezone: Asia/Seoul # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title: "Juyeon Lee's log" # Needed for Siteleaf
     output: true
-    description: "Juyeon Lee's log" # The post list page content
-    feature_text: |
-      "파이썬, 자바 웹 백엔드 개발자가 되기 위해 노력중! 기록하고 싶은 것들 기록합니다."
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    description: "파이썬, 자바 웹 백엔드 개발자가 되기 위해 노력중! 기록하고 싶은 것들 기록합니다." # The post list page content
+    feature_text:
+    feature_image:
   projects:
     title: projects
     output: true
@@ -131,6 +130,8 @@ navigation_header:
   url: /about/
 - title: Categories
   url: /categories/
+- title: Tags
+  url: /tags/
 - title: Search
   url: /search/
 

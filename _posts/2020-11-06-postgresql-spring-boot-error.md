@@ -16,6 +16,8 @@ feature_text: |
 데이터베이스와 연결하면서 오류가 잘 해결되지 않았다.
 (책에 나온 H2말고 나는 바로 PostgreSQL로 진행했다. 물론 PostgreSQL은 미리 설치완료했다.)
 
+<!-- more -->
+
 ## 첫 번째 에러
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postsRepository' defined in com.juyeon.team.teamcoder.domain.posts.PostsRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaMappingContext'
 

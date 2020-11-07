@@ -1,0 +1,50 @@
+<!--
+<nav class="col full pagination">
+    <ul>
+        <li><span class="page-numbers prev inactive">Prev</span></li>
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <li><span class="page-numbers current">{{ page }}</span></li>
+        {% else %}
+        <li><a href="{{ site.baseurl }}/blog/{% if page != 1%}page{{ page }}{% endif %}" class="page-numbers">{{ page }}</a></li>
+        {% endif %}
+        {% endfor %}
+
+        <li><a href="#" class="page-numbers next">Next</a></li>
+    </ul>
+</nav>
+-->
+
+{% if paginator.total_pages > 1 %}
+<nav class="col full pagination">
+    <ul>
+        <li>
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="page-numbers prev">&laquo; Prev</a>
+            {% else %}
+            <span class="page-numbers prev inactive">&laquo; Prev</span>
+            {% endif %}
+        </li>
+
+        {% for page in (1..paginator.total_pages) %}
+        <li>
+            {% if page == paginator.page %}
+            <span class="page-numbers current">{{ page }}</span>
+            {% elsif page == 1 %}
+            <a href="{{ paginator.previous_page_path | relative_url }}" class="page-numbers">{{ page }}</a>
+            {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-numbers">{{ page }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+
+        <li>
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | relative_url }}" class="page-numbers next">Next &raquo;</a>
+            {% else %}
+            <span class="page-numbers next inactive">Next &raquo;</span>
+            {% endif %}
+        </li>
+    </ul>
+</nav>
+{% endif %}
