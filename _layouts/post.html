@@ -15,8 +15,8 @@ layout: default
 
         <h1>Juyeon Lee's log<span>.</span></h1>
         <p>파이썬, 자바 웹 백엔드 개발자가 되기 위해 노력중! 기록하고 싶은 것들 기록합니다.</p>
-        
-        
+
+
       </div>
 
     </div>
@@ -27,24 +27,23 @@ layout: default
    ================================================== -->
   <div class="content-outer">
     <div id="page-content" class="row">
-      <div id="primary" class="eight columns">
+      <div class="post-main-content">
         <article class="post">
           <div class="entry-header cf">
-          <h1>{{ page.title }}</h1>
+            <h1>{{ page.title }}</h1>
           </div>
           {% include post-meta.html %}
           {{ content }}
-          
+
         </article>
         {% include nav-share.html %}
-
         {% include post-comments.html %}
       </div>
-      {% include side-widget.html %}
     </div>
-  
+  </div>
+
   </div> <!-- Content End-->
-  
-  </main>
-  
-  {% include footer.html %}
+
+</main>
+
+{% include footer.html %}

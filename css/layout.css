@@ -86,6 +86,12 @@ img { border-radius: 3px; }
    margin: 0 auto;
    width: 91.66667%;
 }
+
+.post-main-content{
+   width: 80%;
+   margin: 0 auto;
+}
+
 /* page */
 .page section {
    padding-top: 24px;
