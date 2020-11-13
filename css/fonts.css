@@ -4,12 +4,11 @@
  * Bitstream Vera Sans Mono
 ================================================================================ */
 @font-face {font-family: "Bitstream Vera Sans Mono"; 
-    src: url("//db.onlinewebfonts.com/t/37d8aff129ecd7d3fc495b7239f834db.eot"); 
-    src: url("//db.onlinewebfonts.com/t/37d8aff129ecd7d3fc495b7239f834db.eot?#iefix") format("embedded-opentype"), 
-        url("//db.onlinewebfonts.com/t/37d8aff129ecd7d3fc495b7239f834db.woff2") format("woff2"), 
-        url("//db.onlinewebfonts.com/t/37d8aff129ecd7d3fc495b7239f834db.woff") format("woff"), 
-        url("//db.onlinewebfonts.com/t/37d8aff129ecd7d3fc495b7239f834db.ttf") format("truetype"), 
-        url("//db.onlinewebfonts.com/t/37d8aff129ecd7d3fc495b7239f834db.svg#Bitstream Vera Sans Mono") format("svg");
+    src: url('/assets/fonts/bitstream/Bitstream\ Vera\ Sans\ Mono\ V1.eot'); 
+    src: url('/assets/fonts/bitstream/Bitstream\ Vera\ Sans\ Mono\ V1.eot') format("embedded-opentype"), 
+        url('/assets/fonts/bitstream/Bitstream\ Vera\ Sans\ Mono\ V1.woff') format("woff"), 
+        url('/assets/fonts/bitstream/Bitstream\ Vera\ Sans\ Mono\ V1.ttf') format("truetype"), 
+        url('/assets/fonts/bitstream/Bitstream\ Vera\ Sans\ Mono\ V1.svg') format("svg");
 }
 
 /*
