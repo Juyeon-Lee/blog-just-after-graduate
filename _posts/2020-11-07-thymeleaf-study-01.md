@@ -1,5 +1,6 @@
 ---
 title: Thymeleaf 공식문서 공부하며 기록하기 01
+comments: true
 categories:
 - thymeleaf
 ---

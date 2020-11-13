@@ -1,5 +1,6 @@
 ---
 title: BeanCreationException jpaMappingContext entityManagerFactory error(gradle spring boot+JPA+PostgreSQL)
+comments: true
 categories:
 - postgresql
 - jpa

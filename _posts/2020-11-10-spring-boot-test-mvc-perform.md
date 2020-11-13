@@ -1,5 +1,6 @@
 ---
 title: Spring boot test MockMvc perform APPLICATION_JSON_UTF8 deprecated
+comments: true
 categories:
 - test
 - spring boot
