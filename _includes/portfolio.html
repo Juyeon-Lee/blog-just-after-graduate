@@ -4,20 +4,15 @@
 
    <div id="page-content" class="row portfolio">
 
-      <section class="entry cf">
+      <section class="portfolio">
 
          <div id="secondary" class="four columns entry-details">
 
-            <h1>Our Portfolio.</h1>
+            <h1>{{page.title}}</h1>
 
-            <p class="lead">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-               auctor,
-               nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh.</p>
+            <p class="lead">{{page.portfolioSummary}}</p>
 
-            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-               nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-               cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-               ornare odio.</p>
+            <p>{{page.portfolioComment}}</p>
 
          </div> <!-- Secondary End-->
 
@@ -31,32 +26,33 @@
                <div class="columns portfolio-item{%if thecycle=='odd'%} first{% endif %}">
                   <div class="item-wrap">
                      <a href="{{ site.baseurl }}{{ page.url }}">
-                        <img alt="" src="/assets/img/portfolio/geometrics.jpg">
+                        <img alt="" src="{{page.mainImage}}">
                         <div class="overlay"></div>
                         <div class="link-icon"><i class="fa fa-link"></i></div>
                      </a>
                      <div class="portfolio-item-meta">
-                        <h5><a href="{{ site.baseurl }}{{ page.url }}">Geometrics</a></h5>
-                        <p>Illustrration</p>
+                        <h5><a href="{{ site.baseurl }}{{ page.url }}">{{page.projectName}}</a></h5>
+                        <p>{{page.projectSummary}}</p>
                      </div>
                   </div>
                </div>
                <!-- projects end -->
                {% endfor %}
                {% include post-pagination.html %}
+
                {% else %}
                {% for page in site.projects %}
                {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
                <div class="columns portfolio-item{%if thecycle=='odd'%} first{% endif %}">
                   <div class="item-wrap">
                      <a href="{{ site.baseurl }}{{ page.url }}">
-                        <img alt="" src="/assets/img/portfolio/geometrics.jpg">
+                        <img alt="" src="{{page.mainImage}}">
                         <div class="overlay"></div>
                         <div class="link-icon"><i class="fa fa-link"></i></div>
                      </a>
                      <div class="portfolio-item-meta">
-                        <h5><a href="{{ site.baseurl }}{{ page.url }}">Geometrics</a></h5>
-                        <p>Illustrration</p>
+                        <h5><a href="{{ site.baseurl }}{{ page.url }}">{{page.projectName}}</a></h5>
+                        <p>{{page.projectSummary}}</p>
                      </div>
                   </div>
                </div>

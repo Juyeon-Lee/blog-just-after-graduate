@@ -8,61 +8,23 @@
 
       <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-halves">
 
+         {% for page in site.projects %}
+         {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
          <div class="columns portfolio-item">
             <div class="item-wrap">
-               <a href="portfolio.html">
-                  <img alt="" src="/assets/img/portfolio/geometrics.jpg">
+               <a href="{{ site.baseurl }}{{ page.url }}">
+                  <img alt="" src="{{page.mainImage}}">
                   <div class="overlay"></div>
                   <div class="link-icon"><i class="fa fa-link"></i></div>
                </a>
                <div class="portfolio-item-meta">
-                  <h5><a href="portfolio.html">Geometrics</a></h5>
-                  <p>Illustration</p>
+                  <h5><a href="{{ site.baseurl }}{{ page.url }}">{{page.projectName}}</a></h5>
+                  <p>{{page.projectSummary}}</p>
                </div>
             </div>
          </div>
-
-         <div class="columns portfolio-item">
-            <div class="item-wrap">
-               <a href="portfolio.html">
-                  <img alt="" src="/assets/img/portfolio/console.jpg">
-                  <div class="overlay"></div>
-                  <div class="link-icon"><i class="fa fa-link"></i></div>
-               </a>
-               <div class="portfolio-item-meta">
-                  <h5><a href="portfolio.html">Console</a></h5>
-                  <p>Web Development</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="columns portfolio-item s-first">
-            <div class="item-wrap">
-               <a href="portfolio.html">
-                  <img alt="" src="/assets/img/portfolio/camera-man.jpg">
-                  <div class="overlay"></div>
-                  <div class="link-icon"><i class="fa fa-link"></i></div>
-               </a>
-               <div class="portfolio-item-meta">
-                  <h5><a href="portfolio.html">Camera Man</a></h5>
-                  <p>Photography</p>
-               </div>
-            </div>
-         </div>
-
-         <div class="columns portfolio-item">
-            <div class="item-wrap">
-               <a href="portfolio.html">
-                  <img alt="" src="/assets/img/portfolio/into-the-light.jpg">
-                  <div class="overlay"></div>
-                  <div class="link-icon"><i class="fa fa-link"></i></div>
-               </a>
-               <div class="portfolio-item-meta">
-                  <h5><a href="portfolio.html">Into The Light</a></h5>
-                  <p>Branding</p>
-               </div>
-            </div>
-         </div>
+         <!-- projects end -->
+         {% endfor %}
 
       </div>
 
