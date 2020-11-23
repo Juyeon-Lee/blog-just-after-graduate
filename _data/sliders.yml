@@ -1,0 +1,25 @@
+- selector: slider1
+  bullets: false
+  captions: true
+  images:
+    - src: /assets/img/portfolio/jerysword/useCaseDiagram.png
+      alt: 유스케이스 다이어그램
+    - data-src: /assets/img/portfolio/jerysword/classDiagram.png
+      alt: 클래스 다이어그램
+    - data-src: /assets/img/portfolio/jerysword/SequenceDiagram.png
+      alt: 시퀀스 다이어그램1 - 기사 검색 및 댓글 반응 시각화
+    - data-src: /assets/img/portfolio/jerysword/SequenceDiagram2.png
+      alt: 시퀀스 다이어그램2 - 기간 설정
+    - data-src: /assets/img/portfolio/jerysword/SequenceDiagram.png
+      alt: 시퀀스 다이어그램3 - 유사도 추정 모델 학습
+  settings:
+    height: 400
+    initialHeight:
+    maxHeight:
+    interval:
+    transitionDuration:
+    effect:
+    disableNav:
+    keyboardNav:
+    previousNavSelector:
+    nextNavSelector:
