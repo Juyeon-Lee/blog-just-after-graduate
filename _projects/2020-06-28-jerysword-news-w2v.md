@@ -105,9 +105,9 @@ image_sliders:
 ### 6. 기간별 기사 조회 페이지 - 댓글 워드클라우드
 
 ![wordcloud page per period](/assets/img/portfolio/jerysword/wordcloud.png)  
-  1) search.py를 통해 검색어와 관련된 기사를 WCArticle Model에 저장  
-  2) Crawler 클래스를 이요해 기간별 댓글 모음.txt파일 생성  
-  3) wordcloud.py 에서 형태소 분석 후 전처리  
-  4) 빈도수로 정렬 후 이미지 생성  
-  5) 기간별 텍스트를 이용해 3,4번 후 이미지 3개 생성  
-  6) DB에 저장.  
+  1) search.py를 통해 검색어와 관련된 기사를 WCArticle Model에 저장합니다.  
+  2) Crawler 클래스를 이용해 기간별 댓글 모음.txt파일 생성합니다.  
+  3) wordcloud.py 에서 형태소 분석 후 전처리합니다.  
+  4) 빈도수로 정렬 후 이미지를 생성합니다.  
+  5) 기간별 텍스트를 이용해 3,4번 후 3개의 이미지를 생성합니다.  
+  6) DB에 저장합니다.  
