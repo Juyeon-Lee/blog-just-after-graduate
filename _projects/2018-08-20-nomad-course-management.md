@@ -9,7 +9,7 @@ projectSummary: |
   보안 상 github 소스코드를 공개할 수 없는 점 양해부탁드립니다.
 projectPeriod: 18.07.01 - 18.07.31 
 totalNum: 4
-myrole: 분반 목록 & 새 분반 추가, 분반정보 관리 & 분반에 소속된 모듈 정보 수정 페이지 제작
+myRole: 분반 목록 & 새 분반 추가, 분반정보 관리 & 분반에 소속된 모듈 정보 수정 페이지 제작
 skills:
 - Java 8
 - Spring Boot 2.0.4

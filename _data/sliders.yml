@@ -13,13 +13,29 @@
     - data-src: /assets/img/portfolio/jerysword/SequenceDiagram.png
       alt: 시퀀스 다이어그램3 - 유사도 추정 모델 학습
   settings:
-    height: 400
-    initialHeight:
-    maxHeight:
+    height: "'auto'"
+    effect: "'fade'"
+    initialHeight: 550
+    maxHeight: 550
     interval:
     transitionDuration:
-    effect:
     disableNav:
     keyboardNav:
     previousNavSelector:
     nextNavSelector:
+
+# for speed typing game
+- selector: slider2
+  bullets: false
+  captions: true
+  images:
+    - src: /assets/img/portfolio/speedgame/systemStructure_client.png
+      alt: 시스템 구조도_클라이언트
+    - data-src: /assets/img/portfolio/speedgame/systemStructure_server.png
+      alt: 시스템 구조도_서버
+    - data-src: /assets/img/portfolio/speedgame/classStructure.png
+      alt: 클래스 구조도
+  settings:
+    height: "'auto'"
+    effect: "'fade'"
+    maxHeight: 550
