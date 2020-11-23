@@ -35,6 +35,7 @@ image_sliders:
 
 ### &#91;구조도&#93;
 (옆으로 넘기는 버튼을 클릭해보세요)
+
 {% include slider.html selector="slider2" %}
 
 ----
