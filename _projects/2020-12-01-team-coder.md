@@ -38,6 +38,7 @@ skills:
 mainImage: "/assets/img/portfolio/teamcoder/main.png"
 links: 
 - "https://github.com/Juyeon-Lee/Team-Coder.git"
+- "https://teamcoder.co.kr"
 image_sliders:
 - teamcoder_slider
 ---
