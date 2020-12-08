@@ -66,6 +66,7 @@ image_sliders:
 전체적이고 자세한 설명은 다음 링크의 [PPT 발표자료](https://drive.google.com/file/d/1GVxnB8SfwNNkbsg6sN4f0IoTB2O6q2s0/view?usp=sharing)로 보실 수 있습니다.
 
 실제 호스팅한 사이트로 이동하려면 다음 링크를 누르세요. [https://teamcoder.co.kr](https://teamcoder.co.kr)
+
 ----
 
 ### 1. 사이트 이용 권한 설정
