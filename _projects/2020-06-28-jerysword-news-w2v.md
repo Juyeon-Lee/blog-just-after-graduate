@@ -30,7 +30,7 @@ mainImage: "/assets/img/portfolio/jerysword/main.png"
 links: 
 - "https://github.com/Juyeon-Lee/Jerys_word_ver_server.git"
 image_sliders:
-- slider1
+- jerysword_slider
 ---
 
 ### &#91;동기 및 목적&#93;
@@ -46,7 +46,7 @@ image_sliders:
 ### &#91;구조도&#93;
 (옆으로 넘기는 버튼을 클릭해보세요)
 
-{% include slider.html selector="slider1" %}
+{% include slider.html selector="jerysword_slider" %}
 <br>
 
 #### &#62; 개발한 부분 세부 설명
@@ -73,13 +73,13 @@ image_sliders:
 
 ### 3. 메인 페이지 - 검색어 입력
 
-![기능 흐름도](/assets/img/portfolio/jerysword/main.png)  
+![메인 페이지](/assets/img/portfolio/jerysword/main.png)  
 -> 메인페이지입니다. 검색창에 검색어를 1개 이상(복수 가능) 입력 후 엔터를 입력하면 검색이 실행됩니다.
 
-![기능 흐름도](/assets/img/portfolio/jerysword/loading.png)  
+![ajax loading](/assets/img/portfolio/jerysword/loading.png)  
 -> 검색 후 데이터가 처리되는 동안 loading 화면을 띄웁니다. 이 과정에서 Ajax를 사용하여 처리했습니다.
 
-![기능 흐름도](/assets/img/portfolio/jerysword/error_popup.png)  
+![exception popup](/assets/img/portfolio/jerysword/error_popup.png)  
 -> 검색어에 대한 예외처리를 위한 팝업창입니다. 올바르지 못한 문자, 학습되지 않은 단어 등을 필터링하기 위함입니다.
 
 ### 4. 검색 결과 페이지 - 기사 목록

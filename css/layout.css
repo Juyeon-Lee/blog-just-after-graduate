@@ -170,11 +170,10 @@ img { border-radius: 3px; }
 }
 #sidebar .photostream li {
    float: left;
-   display: inline-block;
+   display: block;
    margin: 0 0 15px 15px;
    padding: 0;
 }
-#sidebar .photostream li a { }
 #sidebar .photostream li a img {
    border-radius: 3px;
    height: 54px;
@@ -210,8 +209,6 @@ img { border-radius: 3px; }
    right: 18px;
    /*display: none !important;*/
 }
-
-#primary { }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -409,7 +406,7 @@ ul#nav ul li a {
 .flexslider .slides > li { position: relative; }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; backface-visibility: hidden;}
 /* Suggested container for slide animation setups. Can replace this with your own */
 .flex-container { zoom: 1; position: relative; }
 
@@ -465,7 +462,6 @@ ul#nav ul li a {
    justify-content: center;
 }
 .slides li img {
-   vertical-align: bottom;
    display: block;
 }
 
@@ -1115,7 +1111,6 @@ ol.commentlist {
 /* ------------------------------------------------------------------ */
 
 /* Team Members */
-#team-wrapper { }
 
 #team-wrapper .member {
    margin-bottom: 24px;
@@ -1161,7 +1156,7 @@ ol.commentlist {
 }
 #contact-form .half { width: 47%; }
 #contact-form label {
-	display: inline-block;
+	display: block;
 	float: left;
 }
 #contact-form input,

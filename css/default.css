@@ -174,15 +174,25 @@ kbd, pre, samp { /*code */
 /*
 end of github.css
 */
-/*
-pre {
-   white-space: pre;
-   white-space: pre-wrap;
-   word-wrap: break-word;
-}
-*/
 
-blockquote, q { quotes: &#8220; }
+/*
+entry-excerpt
+project detail page - h margin
+*/
+.entry-excerpt > h1,
+.entry-excerpt > h2,
+.entry-excerpt > h3{
+   margin-top: 50px;
+   margin-bottom: 30px;
+}
+.entry-excerpt > h4,
+.entry-excerpt > h5,
+.entry-excerpt > h6{
+   margin-top: 20px;
+   margin-bottom: 14px;
+}
+
+blockquote, q { quotes: #8220; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {

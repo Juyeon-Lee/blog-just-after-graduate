@@ -28,7 +28,7 @@ links:
 - "https://github.com/Juyeon-Lee/SpeedTyingGame.git"
 - "https://github.com/Juyeon-Lee/SpeedTypingGameSVR.git"
 image_sliders:
-- slider2
+- speed_game_slider
 ---
 
 ----
@@ -36,7 +36,7 @@ image_sliders:
 ### &#91;구조도&#93;
 (옆으로 넘기는 버튼을 클릭해보세요)
 
-{% include slider.html selector="slider2" %}
+{% include slider.html selector="speed_game_slider" %}
 
 ----
 

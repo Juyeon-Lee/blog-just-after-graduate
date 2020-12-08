@@ -1,10 +1,10 @@
----
-permalink: "/assets/js/sw.js"
-layout: null
-sitemap: false
----
+// ---
+// permalink: "/assets/js/sw.js"
+// layout: null
+// sitemap: false
+// ---
 
-const version = '{{ site.time | date: '%Y%m%d%H%M%S' }}';
+const version = '{{ site.time | date: "%Y%m%d%H%M%S" }}';
 const cacheName = `static::${version}`;
 
 const buildContentBlob = () => {
@@ -19,7 +19,7 @@ const buildContentBlob = () => {
     {%- endfor -%}
       "{{ site.logo }}", "/assets/img/default-offline-image.png", "/assets/js/fetch.js"
   ]
-}
+};
 
 const updateStaticCache = () => {
   return caches.open(cacheName).then(cache => {

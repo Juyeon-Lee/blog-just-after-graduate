@@ -1,4 +1,4 @@
-- selector: slider1
+- selector: jerysword_slider
   bullets: false
   captions: true
   images:
@@ -24,8 +24,27 @@
     previousNavSelector:
     nextNavSelector:
 
+# for teamcoder
+- selector: teamcoder_slider
+  bullets: false
+  captions: true
+  images:
+    - src: /assets/img/portfolio/teamcoder/usecase.jpg
+      alt: 유스케이스 
+    - data-src: /assets/img/portfolio/teamcoder/architecture.png
+      alt: 시스템 구조도
+    - data-src: /assets/img/portfolio/teamcoder/entity_detail.jpg
+      alt: 엔티티 상세
+    - data-src: /assets/img/portfolio/teamcoder/erd.jpg
+      alt: ERD(엔티티 관계 다이어그램)
+  settings:
+    height: "'auto'"
+    effect: "'fade'"
+    initialHeight: 500
+    maxHeight: 800
+
 # for speed typing game
-- selector: slider2
+- selector: speed_game_slider
   bullets: false
   captions: true
   images:
