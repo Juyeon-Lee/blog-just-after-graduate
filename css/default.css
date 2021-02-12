@@ -100,12 +100,13 @@ figcaption{
    float: right;
 }
 
-table{
+article.post > table{
    border: 2px solid #6eb8bb9d;
    background-color: #dfe6ee;
 }
 
-th, td {
+article.post > table > tbody > tr,
+article.post > table > tbody > tr> td {
    padding-left: 10px;
    padding-right: 20px;
    border: 1px solid #6eb8bb9d;
@@ -117,6 +118,7 @@ th, td {
    color: #3d4145;
 }
 
+/*
 code, tt {
    margin: 0 2px;
    padding: 0 5px;
@@ -166,10 +168,9 @@ code, tt {
    background-color: transparent;
    border: none;
  }
-
-kbd, pre, samp { /*code */
-   font-family: Bitstream Vera Sans Mono, monospace, serif;
-   font-size: 1em;
+*/
+kbd, pre, samp, code { /*code */
+   font-family: source-han-sans-korean, sans-serif;
 }
 /*
 end of github.css

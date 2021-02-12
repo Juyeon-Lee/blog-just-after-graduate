@@ -13,6 +13,7 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'jemoji'
   gem 'jekyll-paginate'
+  gem 'jekyll-toc'
 end
 
 gem 'wdm'
